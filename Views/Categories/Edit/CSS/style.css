@@ -1,0 +1,98 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size: 20;
+    -fx-background-color: #f9fbfd;
+    -fx-border-color: TRANSPARENT TRANSPARENT #dee2e6 TRANSPARENT;
+    -fx-border-width: 2px;
+}
+
+.table-view {
+    /*-fx-border-color: #f9fbfd;*/
+    -fx-background-color:  #f9fbfd;
+    -fx-table-cell-border-color: transparent;
+    /*-fx-table-border-color: transparent;*/
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #575962;
+    -fx-alignment: CENTER;
+    -fx-padding: 10px 0px 20px 0px;
+    -fx-font-family: "Droid Sans Mono";
+    -fx-font-size: 14pt;
+}
+
+.table-view .cell {
+    -fx-cell-size: 30;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER;
+    -fx-font-size: 14pt;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(0,0,0,.075);
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button, .table-view .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+}
+
+.table-view .table-row-cell:odd,
+.table-view .table-row-cell:even {
+    -fx-background-color: #f9fbfd;
+    -fx-border-color: #dee2e6 TRANSPARENT TRANSPARENT TRANSPARENT;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: rgba(0,0,0,.075);
+    -fx-text-fill: white;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#2D75E8, 80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#2D75E8, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.jfx-combo-box {
+    -fx-prompt-text-fill: WHITE;
+    -fx-background-color: #1572e8;
+    /*-fx-end-margin: 10px;*/
+    -fx-border-color: #2D75E8;
+    -fx-border-radius: 0.5em;
+    -fx-background-radius: 0.5em;
+}
+.jfx-combo-box .arrow-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-graphic: null;
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+
+
+

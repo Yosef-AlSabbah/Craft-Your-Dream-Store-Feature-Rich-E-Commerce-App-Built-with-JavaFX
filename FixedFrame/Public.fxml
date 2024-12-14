@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" stylesheets="@../Dialogs/Resources/CSS/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FixedFrame.PublicController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" stylesheets="@CSS/PublicStyle.css">
+         <children>
+            <AnchorPane prefHeight="83.0" prefWidth="1930.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="170.0" layoutX="174.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/HypexLogo.png" />
+                     </image>
+                  </ImageView>
+                  <MenuBar id="menuBar" fx:id="menuBar" layoutX="939.0" layoutY="68.0" style="-fx-background-color: white;">
+                    <menus>
+                      <Menu fx:id="categoriesDropDownMenu" mnemonicParsing="false" style="-fx-font-size: 16pt;" styleClass="menus" text="Categories" />
+                    </menus>
+                  </MenuBar>
+                  <JFXButton layoutX="1640.0" layoutY="73.0" onMouseReleased="#moveToLoginPage" style="-fx-border-color: rgba(102, 102, 102, 0.4); -fx-padding: 10px 30px; -fx-font-size: 14pt;" styleClass="toHide" text="Login" textFill="#666666cc" />
+                  <FontAwesomeIconView fill="#666666cc" glyphName="CHEVRON_DOWN" layoutX="1073.0" layoutY="96.0" />
+                  <JFXButton layoutX="776.0" layoutY="66.0" onAction="#goHome" prefHeight="49.0" prefWidth="153.0" style="-fx-font-size: 1.45em; -fx-text-fill: rgba(102, 102, 102, 0.8);" text="Home" />
+                  <ImageView fx:id="exit" fitHeight="35.0" fitWidth="35.0" layoutX="1881.0" layoutY="40.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TextField id="searchBar" fx:id="searchBar" layoutX="171.0" layoutY="166.0" prefHeight="60.0" prefWidth="1590.0" promptText="Search Using Store Name" styleClass="toHide">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <AnchorPane fx:id="anchorPane" layoutX="175.0" layoutY="272.0" prefHeight="875.0" prefWidth="1584.0" style="-fx-background-color: #ffffff;" />
+            <JFXButton layoutX="1633.0" layoutY="166.0" prefHeight="60.0" prefWidth="127.0" style="-fx-background-radius: 0px 0.5em 0.5em 0px; -fx-background-color: #5672f9;" styleClass="toHide" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXButton>
+            <VBox layoutX="43.0" layoutY="988.0" prefHeight="159.0" prefWidth="1930.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="988.0">
+               <children>
+                  <HBox prefHeight="113.0" prefWidth="1930.0" style="-fx-background-color: #363839;">
+                     <padding>
+                        <Insets left="200.0" right="200.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="108.0" prefWidth="988.0">
+                           <children>
+                              <Label text="Copyright © 2023. Designed &amp; Developed by " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Yousef M. Y. AlSabbah" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="108.0" prefWidth="1041.0" spacing="50.0">
+                           <children>
+                              <FontAwesomeIconView fill="#848484" glyphName="FACEBOOK" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="TWITTER" layoutX="10.0" layoutY="25.0" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="PINTEREST" layoutX="21.0" layoutY="25.0" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="GITHUB" layoutX="38.0" layoutY="25.0" size="18.0" />
+                           </children></HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="1930.0" style="-fx-background-color: #232425;" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

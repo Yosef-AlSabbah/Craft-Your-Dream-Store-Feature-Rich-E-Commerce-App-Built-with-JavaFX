@@ -1,0 +1,6 @@
+* {
+    -fx-font-family: "Segoe UI";
+}
+.button {
+    -fx-cursor: hand;
+}

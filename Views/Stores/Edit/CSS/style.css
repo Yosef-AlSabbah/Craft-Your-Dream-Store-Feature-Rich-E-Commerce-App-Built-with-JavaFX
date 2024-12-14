@@ -1,0 +1,10 @@
+.text-field, .jfx-combo-box {
+    -fx-border-radius: 8px;
+    -fx-border-color:  #ebecec;
+    -fx-font-size: 16pt;
+    -fx-prompt-text-fill: #999999;
+    -fx-background-color:  WHITE;
+}
+.jfx-combo-box .arrow-button .arrow {
+    -fx-background-color: #5b5b5b; /* Replace #FF0000 with your desired color */
+}

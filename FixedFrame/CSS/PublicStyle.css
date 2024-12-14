@@ -1,0 +1,21 @@
+.text-field {
+    -fx-font-size: 1.5em;
+    -fx-prompt-text-fill: rgba(102, 102, 102, 0.8);
+    -fx-border-radius: 0.5em;
+    -fx-background-radius: 0.5em;
+    -fx-text-fill: #666666;
+    -fx-border-color: TRANSPARENT;
+    -fx-effect: dropshadow(gaussian, rgba(102, 102, 102, 0.2), 10, 0, 5, 5);
+}
+.menu-bar .menu:hover, .menu-bar .menu:showing {
+    -fx-background-color: WHITE;
+}
+.menu-bar .menu .label {
+    -fx-text-fill: rgba(102, 102, 102, 0.8);
+}
+.menu-bar .menu .menu-item .label {
+    -fx-font-size: 12pt;
+}
+.button {
+    -fx-cursor: hand;
+}

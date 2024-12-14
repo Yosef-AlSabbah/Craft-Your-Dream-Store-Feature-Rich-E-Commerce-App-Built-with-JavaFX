@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<StackPane fx:id="stackPane" stylesheets="@CSS/StorePageCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FixedFrame.PublicController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" stylesheets="@CSS/PublicStyle.css">
+         <children>
+            <AnchorPane prefHeight="159.0" prefWidth="1930.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="170.0" layoutX="174.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/HypexLogo.png" />
+                     </image>
+                  </ImageView>
+                  <MenuBar fx:id="menuBar" layoutX="939.0" layoutY="68.0" style="-fx-background-color: white;">
+                    <menus>
+                      <Menu fx:id="categoriesDropDownMenu" mnemonicParsing="false" style="-fx-font-size: 16pt;" styleClass="menus" text="Categories" />
+                    </menus>
+                  </MenuBar>
+                  <JFXButton layoutX="1640.0" layoutY="73.0" onMouseReleased="#moveToLoginPage" style="-fx-border-color: rgba(102, 102, 102, 0.4); -fx-padding: 10px 30px; -fx-font-size: 14pt;" styleClass="toHide" text="Login" textFill="#666666cc" />
+                  <FontAwesomeIconView fill="#666666cc" glyphName="CHEVRON_DOWN" layoutX="1073.0" layoutY="96.0" />
+                  <JFXButton layoutX="776.0" layoutY="66.0" onAction="#goHome" prefHeight="49.0" prefWidth="153.0" style="-fx-font-size: 1.45em; -fx-text-fill: rgba(102, 102, 102, 0.8);" text="Home" />
+                  <ImageView fx:id="exit" fitHeight="35.0" fitWidth="35.0" layoutX="1881.0" layoutY="40.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPane" layoutX="46.0" layoutY="165.0" prefHeight="915.0" prefWidth="1930.0" style="-fx-background-color: #f5f5f5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="165.0">
+               <children>
+                  <VBox layoutX="915.0" layoutY="-11.0" prefHeight="926.0" prefWidth="1930.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="350.0" prefWidth="1530.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(gaussian, rgba(102, 102, 102, 0.2), 5, 0, 0, 0);">
+                           <children>
+                              <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addidas.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="350.0" prefWidth="319.0" style="-fx-scale-x: 1.2; -fx-scale-y: 1.2;" styleClass="stores-box" stylesheets="@../PublicMainPage/Stores/CSS/style.css">
+                                 <children>
+                                    <HBox layoutX="35.0" layoutY="125.0" prefHeight="52.0" prefWidth="277.0" spacing="5.0">
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                       <children>
+                                          <Label fx:id="title" style="-fx-font-size: 16pt;" text="Adidas">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="277.0" spacing="5.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" size="20" stroke="#888888" strokeType="INSIDE" />
+                                          <Label fx:id="categoryName" style="-fx-font-size: 16px;" text="Clothing &amp;  Showes" textFill="#888888">
+                                             <font>
+                                                <Font size="1.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="277.0">
+                                       <children>
+                                          <Label style="-fx-font-size: 18px;" text="Phone:" textFill="#777777">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="phoneNumber" style="-fx-font-size: 18px;" text=" 1-800-982-93" textFill="#777777" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="47.0" prefWidth="277.0">
+                                       <children>
+                                          <Label style="-fx-font-size: 18px;" text="Address: " textFill="#777777">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="address" style="-fx-font-size: 18px;" text="UK" textFill="#777777" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="starContainer" alignment="CENTER_LEFT" prefHeight="9.0" prefWidth="277.0" spacing="10.0" style="-fx-scale-x: 1.1; -fx-scale-y: 1.1;">
+                                       <children>
+                                          <FontAwesomeIconView glyphName="STAR" size="20" styleClass="star-unchecked" />
+                                          <FontAwesomeIconView glyphName="STAR" layoutX="10.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+                                          <FontAwesomeIconView glyphName="STAR" layoutX="34.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+                                          <FontAwesomeIconView glyphName="STAR" layoutX="58.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+                                          <FontAwesomeIconView glyphName="STAR" layoutX="82.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="200.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="110.0" prefHeight="350.0" prefWidth="1530.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(gaussian, rgba(102, 102, 102, 0.2), 5, 0, 0, 0);">
+                           <children>
+                              <VBox prefHeight="350.0" prefWidth="1545.0" spacing="50.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="90.0" prefWidth="1530.0" style="-fx-border-color: TRANSPARENT TRANSPARENT #dedede TRANSPARENT;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="198.0" style="-fx-text-alignment: center; -fx-line-spacing: -2px;" text="What would you rate this store" textFill="#333333" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="129.0" prefWidth="1450.0">
+                                       <children>
+                                          <VBox fillWidth="false" prefHeight="129.0" prefWidth="643.0" HBox.hgrow="NEVER">
+                                             <children>
+                                                <Rating fx:id="rating" prefHeight="85.0" prefWidth="641.0" rating="3.0" VBox.vgrow="NEVER">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <effect>
+                                                      <DropShadow color="#e6b3227a" height="30.0" radius="14.5" spread="0.27" width="30.0" />
+                                                   </effect>
+                                                </Rating>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="200.0" right="200.0" top="100.0" />
+                     </padding>
+                  </VBox>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

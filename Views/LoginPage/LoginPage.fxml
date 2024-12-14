@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" stylesheets="@../../Dialogs/Resources/CSS/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.LoginPage.LoginPageController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" stylesheets="@CSS/PublicStyle.css">
+         <children>
+            <AnchorPane prefHeight="83.0" prefWidth="1930.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="170.0" layoutX="174.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/HypexLogo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="889.0" layoutY="72.0" onMouseReleased="#goHome" prefHeight="49.0" prefWidth="153.0" style="-fx-font-size: 1.45em; -fx-text-fill: rgba(102, 102, 102, 0.8);" text="Home" />
+                  <ImageView fx:id="exit" fitHeight="35.0" fitWidth="35.0" layoutX="1881.0" layoutY="40.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@../../FixedFrame/images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPane" layoutX="175.0" layoutY="272.0" prefHeight="875.0" prefWidth="1584.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <StackPane>
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="875.0" prefWidth="1584.0" style="-fx-background-color: #ffffff;" stylesheets="@CSS/LoginPage.css">
+                           <children>
+                              <VBox id="loginForm" maxHeight="600.0" prefHeight="500.0" prefWidth="572.0" style="-fx-border-color: #dee2e6; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 20px 20px 0px 0px;">
+                                       <children>
+                                          <Label text="Login Now" textFill="#333333">
+                                             <font>
+                                                <Font name="Calibri" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <VBox alignment="CENTER" prefHeight="241.0" prefWidth="570.0" spacing="20.0">
+                                       <children>
+                                          <JFXTextField fx:id="emailTextField" focusColor="#0040ff00" prefHeight="56.0" prefWidth="526.0" promptText="Email" unFocusColor="#4d4d4d00">
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" top="10.0" />
+                                             </padding>
+                                          </JFXTextField>
+                                          <JFXPasswordField fx:id="passwordTextField" focusColor="#405aa800" promptText="Password" unFocusColor="#4d4d4d00" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" right="20.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox prefHeight="32.0" prefWidth="570.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="keepMeLoggedIn" checkedColor="#2c80ea" text="Keep me Logged in">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </HBox>
+                                    <VBox prefHeight="187.0" prefWidth="570.0" spacing="15.0">
+                                       <children>
+                                          <HBox alignment="BOTTOM_LEFT" prefHeight="101.0" prefWidth="550.0">
+                                             <children>
+                                                <JFXButton onMouseClicked="#login" text="Log in" textFill="WHITE" />
+                                             </children>
+                                             <opaqueInsets>
+                                                <Insets left="20.0" />
+                                             </opaqueInsets>
+                                          </HBox>
+                                          <VBox prefHeight="67.0" prefWidth="550.0">
+                                             <children>
+                                                <Hyperlink onMouseClicked="#forgetPassword" text="Forget Password?" />
+                                                <Hyperlink layoutX="10.0" layoutY="10.0" onMouseClicked="#registerNow" text="Register Now" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children></AnchorPane>
+            <VBox layoutX="43.0" layoutY="988.0" prefHeight="159.0" prefWidth="1930.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="988.0">
+               <children>
+                  <HBox prefHeight="113.0" prefWidth="1930.0" style="-fx-background-color: #363839;">
+                     <padding>
+                        <Insets left="200.0" right="200.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="108.0" prefWidth="988.0">
+                           <children>
+                              <Label text="Copyright © 2023. Designed &amp; Developed by " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Yousef M. Y. AlSabbah" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="108.0" prefWidth="1041.0" spacing="50.0">
+                           <children>
+                              <FontAwesomeIconView fill="#848484" glyphName="FACEBOOK" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="TWITTER" layoutX="10.0" layoutY="25.0" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="PINTEREST" layoutX="21.0" layoutY="25.0" size="18.0" />
+                              <FontAwesomeIconView fill="#848484" glyphName="GITHUB" layoutX="38.0" layoutY="25.0" size="18.0" />
+                           </children></HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="1930.0" style="-fx-background-color: #232425;" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox onMouseReleased="#openStorePage" prefHeight="432.0" prefWidth="327.0" styleClass="stores-box" stylesheets="@CSS/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="169.0" prefWidth="287.0">
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+         <children>
+            <HBox fx:id="image" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Label fx:id="title" style="-fx-font-size: 18pt;" text="Adidas">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="277.0" spacing="5.0">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" size="18" stroke="#888888" strokeType="INSIDE" />
+            <Label fx:id="categoryName" style="-fx-font-size: 14px;" text="Clothing &amp;  Showes" textFill="#888888">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="277.0">
+         <children>
+            <Label style="-fx-font-size: 16px;" text="Phone:" textFill="#777777">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumber" style="-fx-font-size: 16px;" text=" 1-800-982-93" textFill="#777777" />
+         </children>
+      </HBox>
+      <HBox prefHeight="47.0" prefWidth="277.0">
+         <children>
+            <Label style="-fx-font-size: 16px;" text="Address: " textFill="#777777">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="address" style="-fx-font-size: 16px;" text="UK" textFill="#777777" />
+         </children>
+      </HBox>
+      <HBox fx:id="starContainer" alignment="CENTER_LEFT" prefHeight="9.0" prefWidth="277.0" spacing="5.0">
+         <children>
+            <FontAwesomeIconView glyphName="STAR" size="20" styleClass="star-unchecked" />
+            <FontAwesomeIconView glyphName="STAR" layoutX="10.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+            <FontAwesomeIconView glyphName="STAR" layoutX="34.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+            <FontAwesomeIconView glyphName="STAR" layoutX="58.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+            <FontAwesomeIconView glyphName="STAR" layoutX="82.0" layoutY="27.0" size="20" styleClass="star-unchecked" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+   </padding>
+</VBox>

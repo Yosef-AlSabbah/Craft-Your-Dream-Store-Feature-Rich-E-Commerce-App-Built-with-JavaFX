@@ -1,0 +1,9 @@
+.star-checked {
+    -fx-fill: #5672f9 !important;
+}
+.star-unchecked {
+    -fx-fill: #dedede;
+}
+.stores-box {
+    -fx-cursor: hand;
+}

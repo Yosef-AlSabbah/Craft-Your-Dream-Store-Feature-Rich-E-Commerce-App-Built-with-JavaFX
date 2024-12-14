@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Categories.Create.CreateCategoriesController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="997.0" prefWidth="1633.0" style="-fx-background-color: #f9fbfd;">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="25.0" prefHeight="955.0" prefWidth="1595.0" style="-fx-background-color: WHITE; -fx-background-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(69,65,78,.06), 20, 0.5, 0, 0);">
+               <children>
+                  <AnchorPane layoutX="820.0" layoutY="109.0" prefHeight="731.0" prefWidth="734.0" style="-fx-background-color: linear-gradient(to top left, #06418e, #1572e8); -fx-background-radius: 10px;">
+                     <children>
+                        <Text fill="WHITE" layoutX="27.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category News">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Text>
+                        <HBox layoutX="28.0" layoutY="97.0" prefHeight="39.0" prefWidth="683.0" style="-fx-border-color: TRANSPARENT TRANSPARENT #5a96e2 TRANSPARENT;">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: BOLD; -fx-font-size: 16pt;" text="Visitors Per Day">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Text fill="WHITE" layoutX="29.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16pt;" text="Shop the Best Deals at Our Store Today!">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="27.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12pt;" text="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy." wrappingWidth="683.6707763671875">
+                           <font>
+                              <Font name="Calibri" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="23.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16pt;" text="Top Frequent Questions">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="22.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12pt;" text="Why I have to use a unique store name?">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="23.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12pt;" text="Can any one get my phone number?">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="632.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12pt;" text="Answered">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="634.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12pt;" text="Pending...">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <HBox layoutX="2.0" layoutY="27.0" prefHeight="65.0" prefWidth="1585.0" style="-fx-border-color: Transparent Transparent #ebecec Transparent;">
+                     <children>
+                        <Text fill="#575962" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 24pt;" text="Add Category" />
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </HBox>
+                  <JFXTextField fx:id="category_name" focusColor="#405aa800" layoutX="26.0" layoutY="166.0" prefHeight="64.0" prefWidth="762.0" promptText="Enter Category Name" style="-fx-border-radius: 8px; -fx-border-color: #ebecec; -fx-font-size: 16pt;" unFocusColor="#4d4d4d00">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Text fill="#070707" layoutX="25.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17pt; -fx-font-weight: normal;" text="Category Name">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Text>
+                  <HBox layoutX="21.0" layoutY="234.0" prefHeight="42.0" prefWidth="772.0" style="-fx-border-color: TRANSPARENT TRANSPARENT #ebecec TRANSPARENT;">
+                     <children>
+                        <Text fx:id="categoryNameText" fill="#575962" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14pt; -fx-font-weight: normal;" text="Make sure to use a unique name.">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="addCategoryButton" layoutX="58.0" layoutY="324.0" onMouseClicked="#createCategory" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #1572e8; -fx-background-radius: 5px; -fx-font-size: 16pt;" text="Add Category" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+         <stylesheets>
+            <URL value="@CSS/style.css" />
+            <URL value="@../../../css/main-font.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</StackPane>

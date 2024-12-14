@@ -1,0 +1,52 @@
+.jfx-dialog .button {
+    -fx-text-fill: #fff;
+    -fx-cursor: HAND;
+    -fx-padding: 12px 25px;
+    -fx-font-size: 16pt;
+    -fx-background-radius: 6px;
+}
+
+.ok {
+    -fx-background-color: #7066e0;
+}
+
+.confirm {
+    -fx-background-color: #2b77c0;
+}
+
+.reject {
+    -fx-background-color: #c62e2e;
+}
+
+.my-dialog {
+    -fx-min-width: 700px;
+    -fx-maX-height: 350px;
+    -fx-padding: 20px 40px 0px;
+}
+
+.jfx-dialog-overlay-pane > StackPane {
+    -fx-background-radius: 10px;
+    -fx-background-color: WHITE;
+}
+
+.jfx-dialog-overlay-pane {
+    -fx-background-color: rgba(0.0, 0.0, 0.0, 0.5);
+}
+
+.icon-box {
+    -fx-padding: 20px 40px 30px;
+}
+
+.btn-container {
+    -fx-padding: 20px 0px 0px 0px;
+}
+
+.bodyHeaderText {
+    -fx-font-size: 32pt;
+    -fx-text-fill: #545454;
+    -fx-font-family: "Segoe UI";
+}
+
+.bodyBodyText {
+    -fx-font-size: 18pt !important;
+}

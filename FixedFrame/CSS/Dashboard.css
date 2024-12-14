@@ -1,0 +1,34 @@
+.expanded {
+    -fx-background-color: #1572e8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 30, 0, 0, 0);
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.jfx-button {
+    -fx-graphic-text-gap: 20px;
+    -fx-cursor: hand;
+}
+.arrow {
+    -fx-background-image: url('../images/down-arrow.png');
+    -fx-background-size: 8px;
+    -fx-background-position: right 8% center;
+    -fx-background-repeat: no-repeat;
+}
+.arrow.expanded {
+    -fx-background-image: url('../images/up-arrow.png');
+}
+.jfx-button:hover, .subMenuSelection {
+    -fx-background-color: #f4f4f4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+    -fx-background-radius: 10px;
+}
+
+.jfx-button.expanded:hover {
+    -fx-background-color: #1572e8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 30, 0, 0, 0);
+}
+.subMenuSelection .subMenuGraphic {
+    -fx-fill: #2196f3;
+}
+

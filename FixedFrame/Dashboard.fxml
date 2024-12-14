@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" stylesheets="@../Dialogs/Resources/CSS/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FixedFrame.DashboardController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #f9fbfd;" stylesheets="@CSS/Dashboard.css">
+         <children>
+            <AnchorPane prefHeight="62.0" prefWidth="1930.0" style="-fx-background-color: #1269db;">
+               <children>
+                  <Label fx:id="drawerImage" layoutX="7.0" layoutY="7.0" />
+                  <ImageView fx:id="exit" fitHeight="35.0" fitWidth="35.0" layoutX="1881.0" layoutY="10.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@images/exit.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="62.0" prefWidth="278.0" style="-fx-background-color: #1572e8;">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="130.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/HypexLogo2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="32.0" layoutX="232.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/burger.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="title" fill="WHITE" layoutX="300.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <VBox fx:id="sideBar" layoutY="62.0" prefHeight="1018.0" prefWidth="278.0" spacing="25.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(69,65,78,.06), 20, 0, 5, 1);" AnchorPane.topAnchor="67.0">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onMouseClicked="#getHome" prefHeight="56.0" prefWidth="225.0" text="Home">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" style="theme-image-color: white;">
+                           <image>
+                              <Image url="@images/Home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <VBox fx:id="categoriesMenuVBox" alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="categoriesMenuButton" alignment="TOP_LEFT" buttonType="RAISED" prefHeight="56.0" prefWidth="225.0" styleClass="arrow" text="Categories">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Category.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="storesMenuVBox" alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="250.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="storeMenuButton" alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="56.0" prefWidth="225.0" styleClass="arrow" text="Store">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/StoregGray.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="ratingJFXButton" alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#getRatings" prefHeight="38.0" prefWidth="225.0" text="Ratings">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Ratings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseReleased="#logout" prefHeight="38.0" prefWidth="225.0" text="Logout">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <VBox fx:id="storeOperationsVBox" alignment="CENTER_LEFT" prefHeight="133.0" prefWidth="278.0" spacing="3.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#getShowStores" prefHeight="56.0" prefWidth="205.0" text="Show Stores">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#909196" glyphName="CIRCLE" size="8.0" styleClass="subMenuGraphic" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#getCreateStores" prefHeight="56.0" prefWidth="205.0" text="Create Stores">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#909196" glyphName="CIRCLE" size="8.0" styleClass="subMenuGraphic" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="categoriesOperationsVBox" alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="233.0" spacing="3.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#getShowCategories" prefHeight="56.0" prefWidth="205.0" text="Show Categories">
+                           <font>
+                              <Font size="19.4" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#909196" glyphName="CIRCLE" size="8.0" styleClass="subMenuGraphic" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#getCreateCategories" prefHeight="56.0" prefWidth="205.0" text="Create Categories">
+                           <font>
+                              <Font size="19.4" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#909196" glyphName="CIRCLE" size="8.0" styleClass="subMenuGraphic" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" top="35.0" />
+               </padding>
+            </VBox>
+            <AnchorPane fx:id="anchorPane" layoutX="297.0" layoutY="77.0" prefHeight="997.0" prefWidth="1633.0" style="-fx-background-color: #f9fbfd;" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

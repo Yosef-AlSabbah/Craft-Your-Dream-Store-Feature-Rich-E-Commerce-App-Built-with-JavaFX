@@ -1,0 +1,31 @@
+.text-field {
+    -fx-font-size: 1.3em;
+    -fx-prompt-text-fill: rgba(102, 102, 102, 0.8);
+    -fx-border-radius: 0.4em;
+    -fx-background-radius: 0.4em;
+    -fx-text-fill: #666666;
+    -fx-border-color: TRANSPARENT;
+    -fx-padding: 16px 0px 16px 15px;
+    -fx-effect: none;
+}
+.text-field, .password-field {
+    -fx-border-color: #dee2e6;
+}
+.password-field {
+    -fx-padding: 16px 0px 16px 15px;
+}
+.button {
+    -fx-background-color: #2c80ea;
+    -fx-text-fill: #FFF;
+    -fx-padding: 20px 50px;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+.hyperlink {
+    -fx-text-fill: #2c80ea;
+    -fx-font-size: 16pt;
+    -fx-underline: false;
+}
+#loginForm {
+    -fx-translate-y: -40px;
+}

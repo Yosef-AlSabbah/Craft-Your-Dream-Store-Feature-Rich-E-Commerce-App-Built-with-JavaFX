@@ -1,0 +1,61 @@
+* {
+    -fx-purple: #5672f9;
+}
+.categoriesBox, .stores-box {
+    -fx-background-color: WHITE;
+    -fx-effect: dropshadow(gaussian, rgba(102, 102, 102, 0.2), 5, 0, 0, 0);
+}
+.text {
+    -fx-font-size: 14pt;
+}
+.stores-number-box {
+    -fx-padding: 1px 9px;
+    -fx-background-color: #F4F7F9;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #84919B;
+}
+.categories-side-bar-content {
+    -fx-border-color: #f4f7f9 TRANSPARENT TRANSPARENT TRANSPARENT;
+}
+.text-side-bar {
+    -fx-font-size: 14pt;
+    -fx-transition: all 0.3s;
+}
+.categories-side-bar .content {
+    -fx-cursor: hand;
+}
+.categories-side-bar .content .stores-number-box .number-text {
+    -fx-text-fill: #84919B;
+}
+.categories-side-bar .content:hover .stores-number-box
+{
+    -fx-background-color: -fx-purple;
+}
+.categories-side-bar .content:hover .stores-number-box .number-text {
+    -fx-text-fill: WHITE;
+}
+.categories-side-bar .content:hover .text-side-bar {
+    -fx-text-fill: -fx-purple !important;
+}
+.pagination-elements {
+    -fx-cursor: hand;
+    -fx-padding: 10px 20px;
+    -fx-background-color: WHITE;
+    -fx-text-fill: #666;
+    -fx-effect: dropshadow(gaussian, rgba(102, 102, 102, 0.2), 5, 0, 0, 0);
+    -fx-background-radius: 5px;
+}
+.pagination-elements:hover {
+    -fx-background-color: -fx-purple;
+    -fx-text-fill: #FFF;
+}
+.pagination-elements.pagination-element-active {
+    -fx-cursor: pointer;
+    -fx-opacity: 0.8;
+    -fx-background-color: -fx-purple;
+    -fx-text-fill: #FFF;
+}
+.pagination-elements.pagination-element-disabled {
+    -fx-cursor: pointer;
+    -fx-opacity: 0.8;
+}
